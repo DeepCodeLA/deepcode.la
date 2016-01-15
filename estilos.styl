@@ -1,0 +1,331 @@
+@import 'nib/vendor'
+vendor-prefixes = o ms moz webkit official
+primary = #ccc
+secundary = #273b47
+*
+	margin:0px;
+	padding:0px;
+.title
+	font-size 1.6em		
+	margin 10px 0
+.text-center
+	text-align center
+.text-left
+	text-align left
+.text-right
+	text-align right
+.flex
+	display flex
+.center
+	margin 0 auto
+.container-small
+	width 60%
+	margin 0 auto
+.float-right
+	float right
+.menu-movil
+	cursor pointer
+	
+
+body
+	font-family 'Roboto', sans-serif
+a
+	color inherit
+
+header
+	width 100%
+	float left 	
+	position fixed
+	font-size 1.1em
+	background rgba(250,250,250,.5)
+	z-index 1
+	section
+		display flex
+		nav
+			width auto
+			ul
+				float right
+				list-style none
+				li
+					div
+						span
+							margin-top 10px
+							margin 0 10px
+					//text-align right
+					padding 25px 15px
+					float left
+					list-style none	
+					a
+						text-decoration none
+						color inherit
+						&:hover
+							//background black				
+							//color white
+							border-bottom 1px solid primary
+					transition .8s background
+					ul
+						background rgba(250,250,250,.9)
+						margin-top 25px
+						li
+							float none
+					&:hover  ul
+						display block
+						background rgba(250,250,250,.9)
+						margin-top 25px
+						color black
+						li
+							width 100%
+							&:hover
+								background secundary
+								color white
+					
+					ul
+						display none
+						position absolute
+						max-width 300px
+						text-align left
+						li
+							//position relative
+							//padding 10px 15px
+							padding: 10px 0px 10px 10px
+					
+						
+
+.top_header
+	background url(img/keyboard.jpg) primary fixed bottom right
+	//height calc(100vh - 69px)
+	height 100vh
+	margin 0 !important	
+	div	
+		background rgba(250,250,250,.5)
+		padding 15px 0
+		h2,p
+			margin 10px 0
+		h2
+			font-size 1.9em	
+.count
+	padding 20px 0
+	text-align center
+	font-size 1.4em
+	color secundary
+	font-family "Roboto", sans-serif
+	font-weight 700
+	max-width 100%
+	p
+		margin 10px 0
+	#code-line
+		font-size 2.4em
+		font-family "Lato",sans-serif
+		font-weight 900
+.sabemos
+	background black
+	color white
+	font-size 1.7em
+	text-align center
+	padding 20px 0
+	text-transform uppercase
+.servicios
+	background secundary
+	padding 30px 0
+	h3
+		font-size 2em
+		margin 10px 0
+	div
+		padding 55px 15px
+		box-sizing border-box
+		color black
+		font-family "Roboto", sans-serif
+		div
+			background white
+			border-radius 10px
+			p
+				span
+					color primary
+					font-size 3.5em
+				a
+					font-size 1.1em
+					padding 10px 20px
+					margin 10px 10px		
+
+.recomendaciones
+	background rgba(0,0,0,.1)
+	padding 60px 0
+	font-family "Lato", sans-serif
+	span
+		font-size 2.5em
+	p
+		font-size 2em
+		color secundary
+		text-align center
+	footer
+		display flex
+		//margin 65px 0
+		font-family: 'Dosis', sans-serif;
+		margin-top 20px
+		img
+			border-radius 50%
+		p
+			font-size 1.15em
+			//text-align 
+			
+.clientes
+	padding 30px 0
+	p
+		font-family "Roboto", sans-serif
+		font-size 1.2em
+		margin 15px 0
+	.title
+		font-size 2.4em
+		font-weight 900
+		font-family "Lato",sans-serif
+	img
+		-webkit-filter grayscale(1)
+		-ms-filter grayscale(1)
+		-o-filter grayscale(1)
+		filter grayscale(1)
+		margin 10px auto 
+		max-width 200px
+		max-height 100px
+		&:hover
+			-webkit-filter grayscale(0)
+			-ms-filter grayscale(0)
+			-o-filter grayscale(0)
+			filter grayscale(0)
+
+.ideas
+	background url(img/laptop.jpg) center fixed primary
+	padding 80px 0px
+	margin-top 20px
+	
+	p
+		font-family "Roboto", sans-serif
+		font-weight 900
+		font-size 2.3em
+		color white
+		text-align center
+	span 
+		font-size 7em
+		color white
+		text-align center
+		width 100%
+	ul
+		li
+			//list-style none
+			p
+				font-family "Roboto",sans-serif
+				text-align left
+	.content
+		background rgba(0,0,0,.4)
+		padding 20px
+		
+footer
+	.contacto
+		background secundary
+		padding 20px 0
+		max-width 100%
+		text-align center
+		color white
+		font-size 1.3em
+		span
+			font-size 2.4em
+			margin 15px 0
+	.formulario
+		width 100%
+		margin 30px 0
+		.t
+			margin 20px 0
+		p
+			font-family "Roboto",sans-serif
+			font-size 1.5em
+			text-align center
+		.title
+			font-size 2em
+			font-weight 900
+		input,textarea,label
+			float left
+			width 100%
+		input
+			height 50px
+			margin-bottom 10px
+			font-size 1.4em
+			background none
+			border none
+			border-bottom 3px solid secundary
+			transition 1s border ease-out
+			&:focus
+				border-bottom 3px solid green
+				outline none
+			
+			&:selected
+				border none
+		textarea
+			background none
+			border none
+			border-bottom 3px solid secundary
+			font-size 1.6em
+			transition 1s border ease-out
+			&:focus
+				border-bottom 3px solid green
+				outline none
+		label,input,textarea
+			font-family "Roboto",sans-serif
+			font-size 1.4em
+	.social
+		width 100%
+		float left
+		background secundary
+		font-size 1.2em
+		padding 35px 0
+		color white
+		margin-top 30px
+		text-align center
+		a
+			//margin 0 10px
+			span
+				//margin 0 10px
+@media only screen and (min-width: 64em)
+	.menu-movil
+		display none
+		
+		
+
+
+@media only screen and (max-width: 64em)
+	header
+		background rgba(250,250,250,.8)
+		position static
+		section
+			padding 15px 0
+			nav
+				margin-top 30px
+				display none
+				float none
+				margin-left -100%
+				max-width
+				ul
+					float none
+					li
+						float none
+						padding 15px 10px
+						&:hover ul
+							display none
+						ul
+							//display none
+							position relative
+							max-width 100%
+							text-align left
+							padding-left 30px
+	.container-small
+		width 90%
+							
+
+				
+
+
+
+
+
+
+
+
+
