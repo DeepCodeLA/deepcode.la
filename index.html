@@ -227,11 +227,11 @@
 				<p>¿Quieres ponerte en contacto con nuestro equpo de profesionales?</p>
 			</div>
 			<div class=" container-small">
-				<form action="#">
-					<input class="wow bounceInRight" placeholder="Nombre" type="text">
-					<input class="wow bounceInLeft" placeholder="Correo electrónico" type="email">
-					<textarea placeholder="Mensaje" class="" name="" id="" cols="30" rows="10"></textarea>
-					<input class="wow bounceInUp" type="submit" value="Enviar">
+				<form action="contactenos.php" method="post">
+					<input class="wow bounceInRight" placeholder="Nombre" type="text" name="nombre" id="nombre">
+					<input class="wow bounceInLeft" placeholder="Correo electrónico" type="email" name="email" id="email">
+					<textarea placeholder="Mensaje" class="" name="contenido" id="contenido" cols="30" rows="10"></textarea>
+					<input class="wow bounceInUp" type="submit" id="submit" name="submit" value="Enviar">
 				</form>
 			</div>
 		</section>
